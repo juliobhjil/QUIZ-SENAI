@@ -23,7 +23,7 @@ class _QuizPageState extends State<QuizPage> {
     },
     {
       'question': 'Qual desses animais é mamífero?',
-      'image':'assets/mamifero.png',
+      'image':'assets/MAMIFEROS.png',
       'answers': [
         {'text': 'Tigre', 'isCorrect': false},
         {'text': 'Leão', 'isCorrect': false},
@@ -41,7 +41,7 @@ class _QuizPageState extends State<QuizPage> {
     },
     {
       'question': 'O Batman é?',
-      'image':'assets/unnamed.png',
+      'image':'assets/BATMAN.png',
       'answers': [
         {'text': 'Vilão', 'isCorrect': false},
         {'text': 'Herói', 'isCorrect': true},
@@ -50,7 +50,7 @@ class _QuizPageState extends State<QuizPage> {
     },
     {
       'question': 'O Sol é?',
-      'image':'assets/sol.png',
+      'image':'assets/SOL.png',
       'answers': [
         {'text': 'Planeta', 'isCorrect': false},
         {'text': 'Estrela', 'isCorrect': true},
@@ -59,7 +59,7 @@ class _QuizPageState extends State<QuizPage> {
     },
     {
       'question': 'Miami fica localizada em:',
-      'image':'assets/miami.png',
+      'image':'assets/MIAMI.png',
       'answers': [
         {'text': 'Chile', 'isCorrect': false},
         {'text': 'Estados Unidos', 'isCorrect': true},
@@ -68,7 +68,7 @@ class _QuizPageState extends State<QuizPage> {
     },
     {
       'question': 'Quantos títulos o Brasil tem?',
-      'image':'assets/titulo.png',
+      'image':'assets/TITULO BR.png',
       'answers': [
         {'text': '7', 'isCorrect': false},
         {'text': '5', 'isCorrect': true},
@@ -77,7 +77,7 @@ class _QuizPageState extends State<QuizPage> {
     },
     {
       'question': 'Macacos me...?',
-      'image':'assets/macaco.png',
+      'image':'assets/MACACOS ME.png',
       'answers': [
         {'text': 'peguem!', 'isCorrect': false},
         {'text': 'mordam!', 'isCorrect': true},
@@ -87,7 +87,7 @@ class _QuizPageState extends State<QuizPage> {
 
     {
       'question': 'Quem descobril o Brasil?',
-      'image':'assets/descobrimento.png',
+      'image':'assets/DESCOBRIMENTO.png',
       'answers': [
         {'text': 'Pedro Alvares Cabral', 'isCorrect': false},
         {'text': 'Indigenas', 'isCorrect': true},
@@ -97,7 +97,7 @@ class _QuizPageState extends State<QuizPage> {
 
     {
       'question': 'Phyton é:',
-      'image':'assets/phython.png',
+      'image':'assets/CAPITURAS DE TELA PORR.png',
       'answers': [
         {'text': 'Cobra', 'isCorrect': false},
         {'text': 'Linguagem de Programação', 'isCorrect': true},
@@ -106,6 +106,7 @@ class _QuizPageState extends State<QuizPage> {
     },
   ];
 int questionIndex = 0;
+int numeropergunta = 1;
   int score = 0;
 
   void answerQuestion(bool isCorrect) {
@@ -130,6 +131,7 @@ int questionIndex = 0;
     setState(() {
       if (questionIndex < questions.length -1 ) {
         questionIndex++;
+        numeropergunta++;
       } else {
         Navigator.push(
           context,
@@ -151,6 +153,7 @@ int questionIndex = 0;
         body : 
         Column(
           children:<Widget>[
+          Text('Questão $questionIndex'),
             Expanded(child: Image.asset(questions[questionIndex]['image']as String),),
              questionIndex < questions.length 
             ? Quiz(
