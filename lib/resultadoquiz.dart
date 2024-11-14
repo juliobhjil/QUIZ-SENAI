@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 
+
 class Result extends StatelessWidget {
   final int score;
   final Function resultadoquiz;
@@ -8,11 +9,16 @@ class Result extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    
     String mensagem;
+    String gifUrl;
+
     if (score > 5) {
       mensagem = "Parabéns, você teve um bom desempenho!";
+      gifUrl = 'https://media.tenor.com/ZisvzS5S1HkAAAAM/the-rock-surprised.gif'; 
     } else {
       mensagem = "Você terá um bom desempenho na próxima!";
+      gifUrl = 'https://media.tenor.com/aGgnqxZUzeUAAAAM/sad.gif'; 
     }
 
     return Scaffold(
@@ -24,9 +30,11 @@ class Result extends StatelessWidget {
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
+            // Exibe o GIF
             Image.network(
-              'https://media1.tenor.com/m/Ynxb0920x0UAAAAd/brain-run.gif', 
+              gifUrl,
               height: 200,
+              fit: BoxFit.cover,
             ),
             const SizedBox(height: 20),
             Text(
