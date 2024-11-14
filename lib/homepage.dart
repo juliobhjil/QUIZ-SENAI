@@ -18,7 +18,7 @@ class HomePage extends StatelessWidget {
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
             Image.network(
-              'https://static6.depositphotos.com/1000658/597/v/450/depositphotos_5970020-stock-illustration-illustration-human-brain-in-profile.jpg', 
+              'https://media1.tenor.com/m/Ynxb0920x0UAAAAd/brain-run.gif', 
               height: 200,
             ),
             const SizedBox(height: 20),

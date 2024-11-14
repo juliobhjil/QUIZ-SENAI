@@ -58,16 +58,17 @@ flutter:
   # the material Icons class.
   uses-material-design: true
   assets:
-   - assets/1+1.png
-   - assets/BATMAN.png
-   - assets/CAPITURAS DE TELA PORR.png
-   - assets/DESCOBRIMENTO.png
-   - assets/MACACOS ME.png
-   - assets/MAMIFEROS.png
-   - assets/MIAMI.png
-   - assets/rei do gado.png
-   - assets/SOL.png
-   - assets/TITULO BR.png
+   - assets/Q1.gif
+   - assets/Q2.gif
+   - assets/Q3.gif
+   - assets/Q4.gif
+   - assets/q5.gif
+   - assets/Q6.gif
+   - assets/Q7.gif
+   - assets/Q8.gif
+   - assets/Q9.gif
+   - assets/Q00.gif
+  
 
   # To add assets to your application, add an assets section, like this:
   # assets:

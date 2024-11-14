@@ -6,7 +6,7 @@ class QuizPage extends StatefulWidget {
 
   @override
   
-  // ignore: library_private_types_in_public_api
+  
   _QuizPageState createState() => _QuizPageState();
 }
 
@@ -14,7 +14,7 @@ class _QuizPageState extends State<QuizPage> {
   final List<Map<String, Object>> questions = [
     {
       'question': 'Qual é o atual presidente do Brasil?',
-      'image':'assets/rei do gado.png',
+      'image':'assets/Q1.gif',
       'answers': [
         {'text': 'Lula', 'isCorrect': true},
         {'text': 'Bolsonaro', 'isCorrect': false},
@@ -23,7 +23,7 @@ class _QuizPageState extends State<QuizPage> {
     },
     {
       'question': 'Qual desses animais é mamífero?',
-      'image':'assets/MAMIFEROS.png',
+      'image':'assets/Q2.gif',
       'answers': [
         {'text': 'Tigre', 'isCorrect': false},
         {'text': 'Leão', 'isCorrect': false},
@@ -32,7 +32,7 @@ class _QuizPageState extends State<QuizPage> {
     },
     {
       'question': 'Quanto é 1+1?',
-      'image':'assets/1+1.png',
+      'image':'assets/Q3.gif',
       'answers': [
         {'text': '3', 'isCorrect': false},
         {'text': '2', 'isCorrect': true},
@@ -41,16 +41,16 @@ class _QuizPageState extends State<QuizPage> {
     },
     {
       'question': 'O Batman é?',
-      'image':'assets/BATMAN.png',
+      'image':'assets/Q4.gif',
       'answers': [
         {'text': 'Vilão', 'isCorrect': false},
+        {'text': 'Ant-Herói', 'isCorrect': false},
         {'text': 'Herói', 'isCorrect': true},
-        {'text': 'Anti-herói', 'isCorrect': false},
       ],
     },
     {
       'question': 'O Sol é?',
-      'image':'assets/SOL.png',
+      'image':'assets/q5.gif',
       'answers': [
         {'text': 'Planeta', 'isCorrect': false},
         {'text': 'Estrela', 'isCorrect': true},
@@ -59,7 +59,7 @@ class _QuizPageState extends State<QuizPage> {
     },
     {
       'question': 'Miami fica localizada em:',
-      'image':'assets/MIAMI.png',
+      'image':'assets/Q6.gif',
       'answers': [
         {'text': 'Chile', 'isCorrect': false},
         {'text': 'Estados Unidos', 'isCorrect': true},
@@ -68,7 +68,7 @@ class _QuizPageState extends State<QuizPage> {
     },
     {
       'question': 'Quantos títulos o Brasil tem?',
-      'image':'assets/TITULO BR.png',
+      'image':'assets/Q7.gif',
       'answers': [
         {'text': '7', 'isCorrect': false},
         {'text': '5', 'isCorrect': true},
@@ -77,7 +77,7 @@ class _QuizPageState extends State<QuizPage> {
     },
     {
       'question': 'Macacos me...?',
-      'image':'assets/MACACOS ME.png',
+      'image':'assets/Q00.gif',
       'answers': [
         {'text': 'peguem!', 'isCorrect': false},
         {'text': 'mordam!', 'isCorrect': true},
@@ -87,17 +87,17 @@ class _QuizPageState extends State<QuizPage> {
 
     {
       'question': 'Quem descobril o Brasil?',
-      'image':'assets/DESCOBRIMENTO.png',
+      'image':'assets/Q8.gif',
       'answers': [
-        {'text': 'Pedro Alvares Cabral', 'isCorrect': false},
         {'text': 'Indigenas', 'isCorrect': true},
+        {'text': 'Pedro Alvares Cabral', 'isCorrect': false},
         {'text': 'Getulio Vargas', 'isCorrect': false},
       ],
     },
 
     {
       'question': 'Phyton é:',
-      'image':'assets/CAPITURAS DE TELA PORR.png',
+      'image':'assets/Q9.gif',
       'answers': [
         {'text': 'Cobra', 'isCorrect': false},
         {'text': 'Linguagem de Programação', 'isCorrect': true},
